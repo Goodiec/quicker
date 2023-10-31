@@ -9,7 +9,7 @@
 }
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 /* custom scroll bar */
@@ -332,6 +332,7 @@ p {
 }
 .about .about-content .left {
   width: 40%;
+  margin-right: 5vw
 }
 .about .about-content .left img {
   width: 100%;
@@ -340,7 +341,6 @@ p {
 }
 .about .about-content .right {
   position: relative;
-  left: 5vw;
   width: 60%;
   margin: auto;
 }
@@ -559,7 +559,6 @@ p {
 }
 .contact .contact-content .row {
   display: flex;
-  height: 65px;
   align-items: center;
 }
 .contact .contact-content .row .info {
@@ -716,9 +715,11 @@ footer span a:hover {
     justify-content: center;
     margin: 0 auto 60px;
   }
+  .about .about-content .left{
+    margin-right: 0;
+  }
   .about .about-content .right {
     flex: 100%;
-    left:0;
   }
   .services .serv-content .card {
     width: calc(50% - 10px);
